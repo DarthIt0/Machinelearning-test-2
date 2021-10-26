@@ -34,8 +34,8 @@
             const convertedData = trainingData.map(({xs, ys}) => {
                 const labels = [
                     ys.species == 'setosa' ? 1 : 0,
-                    ys.species == 'virginica' ? 1 : 0,
-                    ys.species == 'versicolor' ? 1 : 0
+                    ys.species == 'versicolor' ? 1 : 0,
+                    ys.species == 'virginica' ? 1 : 0
                 ]
                 return{ xs: Object.values(xs), ys: Object.values(labels) };
             }).batch(10);
@@ -69,7 +69,7 @@
     <h1>Machine Learning - Test 2</h1>
     <h2>Function by sepal, petals width and length</h2>
     <h2>Predicted flower species will appear after 100 epochs ended, here -----></h2>
-    <h2>Result of ['Setosa', 'Virginica' or 'Versicolor'] is its % on the Prediction tab !!!</h2>
+    <h2>Result of ['Setosa', 'Versicolor' or 'Virginica'] is its % on the Prediction tab !!!</h2>
     <h2>Neural net model, epoch and loss also available -> Developers tools -> Console</h2>
     <h2>By Luine Ito Madeira de Ley</h2>
     
