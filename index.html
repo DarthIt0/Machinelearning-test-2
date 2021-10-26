@@ -53,11 +53,11 @@
             const type = flower.arraySync();
             
             if(type[0][0] > type[0][1] && type[0][0] > type[0][2]){ alert('Setosa');} else {
-                if(type[0][1] > type[0][0] && type[0][1] > type[0][2]){ alert('Virginica');} else { 
-                    if(type[0][2] > type[0][0] && type[0][2] > type[0][1]){ alert('Versicolor');}}}
+                if(type[0][1] > type[0][0] && type[0][1] > type[0][2]){ alert('Versicolor');} else { 
+                    if(type[0][2] > type[0][0] && type[0][2] > type[0][1]){ alert('Virginica');}}}
                     
             const surface0 = {name: 'Result', tab: 'Prediction'};
-            tfvis.show.perClassAccuracy(surface0, ['Setosa', 'Virginica', 'Versicolor'], type);
+            tfvis.show.perClassAccuracy(surface0, ['Setosa', 'Versicolor', 'Virginica'], type);
             
             const surface1 = {name: 'Model Summary', tab: 'Model Inspection'};
             tfvis.show.modelSummary(surface1, model);
